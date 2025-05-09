@@ -3,33 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>作业布置系统</title>
+    <title>课程章节</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>作业布置系统</h1>
-            <div class="controls">
-                <button id="addChapter">添加章节</button>
-                <button id="saveAll">保存所有作业</button>
-            </div>
-        </header>
+        <h1>课程章节</h1>
         
-        <div class="chapters-container" id="chaptersContainer">
-            <!-- 章节方块将通过JavaScript动态添加 -->
+        <div class="chapters-container">
+            <div class="chapter-card">第一章: HTML基础</div>
+            <div class="chapter-card">第二章: CSS样式</div>
+            <div class="chapter-card">第三章: JavaScript基础</div>
+            <div class="chapter-card">第四章: DOM操作</div>
+            <div class="chapter-card">第五章: 响应式设计</div>
+            <div class="chapter-card">第六章: 前端框架</div>
         </div>
     </div>
-
-    <div class="modal" id="addChapterModal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>添加新章节</h2>
-            <input type="text" id="chapterName" placeholder="章节名称">
-            <button id="confirmAddChapter">确认添加</button>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
