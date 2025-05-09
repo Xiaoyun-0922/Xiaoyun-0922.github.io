@@ -12,38 +12,15 @@ body {
     padding: 20px;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-    padding-bottom: 15px;
-    border-bottom: 2px solid #4a90e2;
-}
-
 h1 {
     color: #2c3e50;
-}
-
-.controls button {
-    background-color: #4a90e2;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    margin-left: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s;
-}
-
-.controls button:hover {
-    background-color: #357ab8;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .chapters-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
 }
 
@@ -51,117 +28,21 @@ h1 {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
     transition: transform 0.3s;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #2c3e50;
 }
 
 .chapter-card:hover {
     transform: translateY(-5px);
-}
-
-.chapter-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
-}
-
-.chapter-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0;
-}
-
-.delete-chapter {
-    background-color: #ff6b6b;
-    color: white;
-    border: none;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 12px;
-}
-
-.homework-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.homework-item input {
-    flex-grow: 1;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-right: 10px;
-}
-
-.add-homework {
-    background-color: #4a90e2;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-    margin-top: 10px;
-    width: 100%;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modal-content {
-    background-color: white;
-    margin: 15% auto;
-    padding: 20px;
-    border-radius: 8px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.modal-content h2 {
-    margin-top: 0;
-}
-
-.modal-content input {
-    width: 100%;
-    padding: 8px;
-    margin: 10px 0;
-    box-sizing: border-box;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-.modal-content button {
-    background-color: #4a90e2;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close:hover {
-    color: black;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    color: #4a90e2;
 }
